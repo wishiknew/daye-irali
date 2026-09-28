@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0D3B2A">
+<title>ದಯೆ ಇರಲಿ · Daye Irali — ಪರಿಸರದ ಬಗ್ಗೆ ದಯೆ ಇರಲಿ</title>
+<meta name="description" content="ಪರಿಸರದ ಬಗ್ಗೆ ದಯೆ ಇರಲಿ. Let there be compassion for nature — a people's movement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500;700;800&family=Noto+Sans+Kannada:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --deep:#0D3B2A;
+  --deep-2:#0A2E21;
+  --turmeric:#F2A33A;
+  --bg:#F3F7EE;
+  --surface:#FFFFFF;
+  --ink:#10261C;
+  --muted:#4B5F54;
+  --line:#D2DFCE;
+  --leaf:#1F7A3E;
+  --on-leaf:#FFFFFF;
+  --air:#2F6FA3; --water:#0F7C7C; --soil:#94572A; --life:#1F7A3E;
+  --display:'Baloo Tamma 2','Noto Sans Kannada','Nirmala UI',system-ui,sans-serif;
+  --body:'Noto Sans Kannada','Nirmala UI','Tunga',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1712; --surface:#12251C; --ink:#E8F1E5; --muted:#A5B9AC; --line:#233A2E;
+    --leaf:#5CC27A; --on-leaf:#08160E;
+    --air:#7DB8E8; --water:#58C7C0; --soil:#D69A62; --life:#7BD08B;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1712; --surface:#12251C; --ink:#E8F1E5; --muted:#A5B9AC; --line:#233A2E;
+  --leaf:#5CC27A; --on-leaf:#08160E;
+  --air:#7DB8E8; --water:#58C7C0; --soil:#D69A62; --life:#7BD08B;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;background:var(--deep);scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.75}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+img,svg{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--turmeric);outline-offset:3px;border-radius:6px}
+
+/* ---------- language modes ---------- */
+[data-lang="kn"] .en{display:none !important}
+[data-lang="en"] .kn{display:none !important}
+[data-lang="both"] .en{color:var(--muted)}
+.hero [data-lang] .en,.hero .en{color:inherit}
+[data-lang="both"] h2 .en,[data-lang="both"] h3 .en{display:block;font-size:.56em;font-weight:500;line-height:1.4;margin-top:.15em;color:var(--muted);font-family:var(--body)}
+[data-lang="both"] p.en{font-size:.94rem;margin-top:-.4rem}
+[data-lang="both"] .btn .kn + .en::before{content:" · "}
+[data-lang="both"] .btn .en{color:inherit}
+
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;background-color:var(--deep);color:#F1F6EE;overflow:hidden;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.13) 1.6px, transparent 1.7px),
+    radial-gradient(circle, rgba(255,255,255,.13) 1.6px, transparent 1.7px);
+  background-size:32px 32px;background-position:0 0,16px 16px;
+}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(120% 90% at 78% 40%, rgba(13,59,42,0) 0%, rgba(13,59,42,.75) 70%, var(--deep) 100%)}
+.hero > *{position:relative;z-index:1}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.brand svg{width:48px;height:48px;flex:none}
+.brand b{display:block;font-family:var(--display);font-weight:800;font-size:1.35rem;line-height:1.1}
+.brand small{display:block;font-size:.78rem;opacity:.75;line-height:1.2}
+.seg{display:inline-flex;border:1.5px solid rgba(255,255,255,.35);border-radius:999px;padding:3px;gap:2px}
+.seg button{font:inherit;font-size:.82rem;line-height:1;color:#F1F6EE;background:transparent;border:0;border-radius:999px;padding:.55rem .8rem;cursor:pointer;min-height:36px}
+.seg button[aria-pressed="true"]{background:var(--turmeric);color:#10261C;font-weight:700}
+
+.hero-grid{display:grid;gap:2rem;align-items:center;padding:1.5rem 0 4rem}
+.hero h1{margin:0;font-family:var(--display);font-weight:800}
+.hero h1 .k{display:block;font-size:clamp(2.7rem,10.5vw,5.6rem);line-height:1.22;letter-spacing:-.005em}
+.hero h1 .e{display:block;font-size:clamp(1.25rem,4.4vw,2rem);line-height:1.35;font-weight:500;margin-top:.7rem;color:#F2C97E}
+.hero p.lead{max-width:34rem;margin:1.4rem 0 0;font-size:1.05rem;color:#D9E7DC}
+.hero p.lead + p.lead{margin-top:.6rem;font-size:.97rem;color:#B9CFC0}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.3rem;min-height:48px;padding:.7rem 1.4rem;border-radius:999px;font:inherit;font-weight:700;text-decoration:none;cursor:pointer;border:2px solid transparent;text-align:center}
+.btn-primary{background:var(--turmeric);color:#10261C}
+.btn-primary:hover{background:#F7B75A}
+.btn-ghost{border-color:rgba(255,255,255,.45);color:#F1F6EE;background:transparent}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-solid{background:var(--leaf);color:var(--on-leaf)}
+.btn-solid:hover{filter:brightness(1.08)}
+.hero-logo{justify-self:center;width:min(300px,72vw)}
+.hero-logo svg{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 40px rgba(0,0,0,.35))}
+@media (min-width:860px){
+  .hero-grid{grid-template-columns:1.25fr .75fr;padding:3rem 0 6rem}
+  .hero-logo{width:min(380px,100%)}
+}
+
+/* ---------- sections ---------- */
+section{padding:4.2rem 0}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(1.9rem,6vw,3rem);line-height:1.3;margin:0 0 1.6rem}
+h3{font-family:var(--display);font-weight:700;margin:0}
+.sec-intro{max-width:40rem}
+
+/* elements */
+.elements{display:grid;grid-template-columns:1fr;gap:0;margin-top:2.2rem;border-top:1px solid var(--line)}
+.el{padding:1.6rem 0 1.6rem 1.2rem;border-bottom:1px solid var(--line);border-left:6px solid var(--c);}
+.el h3{font-size:2.3rem;line-height:1.25;color:var(--c)}
+.el h3 .en{color:var(--c) !important;font-weight:700 !important}
+.el p{margin:.4rem 0 0;max-width:28rem}
+.el.air{--c:var(--air)} .el.water{--c:var(--water)} .el.soil{--c:var(--soil)} .el.life{--c:var(--life)}
+@media (min-width:760px){
+  .elements{grid-template-columns:1fr 1fr;column-gap:2.5rem}
+}
+@media (min-width:1040px){
+  .elements{grid-template-columns:repeat(4,1fr);column-gap:1.5rem;border-top:0}
+  .el{border-bottom:0;border-top:1px solid var(--line);padding:1.4rem 0 0 1rem}
+}
+
+/* quote */
+.quote{background:var(--turmeric);color:#0D2A1E;padding:4.5rem 0;text-align:left}
+.quote blockquote{margin:0;max-width:52rem}
+.quote .q{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,8vw,4.4rem);line-height:1.3;margin:0}
+.quote .q-en{font-family:var(--display);font-weight:500;font-size:clamp(1.15rem,3.6vw,1.6rem);margin:.5rem 0 0;color:#0D2A1E !important}
+.quote cite{display:block;margin-top:1.2rem;font-style:normal;font-weight:700;font-size:.98rem}
+.quote cite span{font-weight:400;opacity:.85}
+
+/* pledge */
+.pledge-card{background:var(--surface);border:1.5px solid var(--line);border-radius:22px;padding:1.4rem 1.2rem;margin-top:1.6rem;max-width:44rem}
+.pledge-list{list-style:none;margin:0;padding:0}
+.pledge-list li + li{border-top:1px solid var(--line)}
+.pledge-list label{display:flex;gap:.9rem;align-items:flex-start;padding:.95rem .2rem;cursor:pointer;line-height:1.55}
+.pledge-list input{flex:none;width:1.5rem;height:1.5rem;margin-top:.2rem;accent-color:var(--leaf);cursor:pointer}
+.pledge-list .en{display:block;font-size:.88rem}
+.pledge-list input:checked + span{opacity:.75}
+.prog{display:flex;align-items:center;gap:.9rem;margin-top:1.1rem}
+.bar{flex:1;height:10px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--turmeric),var(--leaf));border-radius:99px;transition:width .35s ease}
+.count{font-family:var(--display);font-weight:700;min-width:3.2rem;text-align:right}
+.thanks{display:none;margin-top:1.2rem;padding:1rem 1.1rem;border-radius:14px;background:color-mix(in srgb,var(--leaf) 14%,transparent);border:1.5px solid var(--leaf)}
+.thanks.on{display:block}
+.thanks p{margin:0}
+.thanks .en{font-size:.92rem}
+
+/* steps */
+.steps{list-style:none;margin:2.2rem 0 0;padding:0;display:grid;gap:1.6rem;counter-reset:s}
+.steps li{border-top:4px solid var(--leaf);padding-top:1rem}
+.steps .n{font-family:var(--display);font-weight:800;font-size:3rem;line-height:1;color:var(--leaf)}
+.steps h3{font-size:1.7rem;line-height:1.3;margin:.3rem 0 .4rem}
+.steps p{margin:.2rem 0 0}
+@media (min-width:820px){.steps{grid-template-columns:repeat(3,1fr);gap:2rem}}
+
+/* closing + footer */
+.closing{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:left}
+.closing h2{margin-bottom:1.2rem}
+footer{background:var(--deep);color:#C4D6C9;padding:2rem 0 2.2rem;font-size:.92rem}
+footer .row{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;justify-content:space-between}
+footer svg{width:40px;height:40px}
+footer .en,footer .kn{color:inherit !important}
+.toast{position:fixed;left:50%;bottom:calc(1.2rem + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--deep);color:#fff;padding:.7rem 1.1rem;border-radius:999px;font-size:.92rem;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:20;border:1px solid rgba(255,255,255,.25)}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+</style>
+</head>
+<body data-lang="both">
+
+<!-- ============ EARTH LOGO (Indian version) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="dl-land" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2A33A"/>
+      <stop offset=".38" stop-color="#8FCB4E"/>
+      <stop offset="1" stop-color="#1F8A45"/>
+    </linearGradient>
+    <radialGradient id="dl-sea" cx=".38" cy=".3" r=".85">
+      <stop offset="0" stop-color="#3C9BD1"/>
+      <stop offset=".6" stop-color="#1D62A8"/>
+      <stop offset="1" stop-color="#123F73"/>
+    </radialGradient>
+    <clipPath id="dl-clip"><circle cx="100" cy="100" r="54"/></clipPath>
+    <path id="dl-petal" d="M100 5 C112 19 112 32 100 43 C88 32 88 19 100 5Z"/>
+    <symbol id="dl-logo" viewBox="0 0 200 200">
+      <!-- lotus ring: 16 petals, saffron and green -->
+      <g>
+        <use href="#dl-petal" fill="#F2A33A"/>
+        <use href="#dl-petal" fill="#2FA04A" transform="rotate(22.5 100 100)"/>
+        <use href="#dl-petal" fill="#F2A33A" transform="rotate(45 100 100)"/>
+        <use href="#dl-petal" fill="#2FA04A" transform="rotate(67.5 100 100)"/>
+        <use href="#dl-petal" fill="#F2A33A" transform="rotate(90 100 100)"/>
+        <use href="#dl-petal" fill="#2FA04A" transform="rotate(112.5 100 100)"/>
+        <use href="#dl-petal" fill="#F2A33A" transform="rotate(135 100 100)"/>
+        <use href="#dl-petal" fill="#2FA04A" transform="rotate(157.5 100 100)"/>
+        <use href="#dl-petal" fill="#F2A33A" transform="rotate(180 100 100)"/>
+        <use href="#dl-petal" fill="#2FA04A" transform="rotate(202.5 100 100)"/>
+        <use href="#dl-petal" fill="#F2A33A" transform="rotate(225 100 100)"/>
+        <use href="#dl-petal" fill="#2FA04A" transform="rotate(247.5 100 100)"/>
+        <use href="#dl-petal" fill="#F2A33A" transform="rotate(270 100 100)"/>
+        <use href="#dl-petal" fill="#2FA04A" transform="rotate(292.5 100 100)"/>
+        <use href="#dl-petal" fill="#F2A33A" transform="rotate(315 100 100)"/>
+        <use href="#dl-petal" fill="#2FA04A" transform="rotate(337.5 100 100)"/>
+      </g>
+      <!-- cream halo -->
+      <circle cx="100" cy="100" r="58" fill="#FBF3DA"/>
+      <!-- globe -->
+      <circle cx="100" cy="100" r="54" fill="url(#dl-sea)"/>
+      <g clip-path="url(#dl-clip)">
+        <!-- graticule -->
+        <g fill="none" stroke="#fff" stroke-opacity=".22" stroke-width=".9">
+          <ellipse cx="100" cy="100" rx="24" ry="54"/>
+          <ellipse cx="100" cy="100" rx="42" ry="54"/>
+          <path d="M46 100H154"/>
+          <path d="M52 76Q100 88 148 76"/>
+          <path d="M52 124Q100 136 148 124"/>
+        </g>
+        <!-- 24 spokes-ticks, a quiet nod to the chakra -->
+        <circle cx="100" cy="100" r="50" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="3" stroke-dasharray="1.4 11.69"/>
+        <!-- India -->
+        <g transform="translate(51.6 51.6) scale(.78)">
+          <path d="M32 4L48 12L56 30L88 42L104 44L124 40L116 48L104 64L92 64L84 68L76 74L64 86L56 92L57 100L55 110L46 120L41 113L35 102L28 84L27 68L16 69L12 63L9 57L16 54L20 52L16 40L24 28L32 16Z"
+                fill="url(#dl-land)" stroke="url(#dl-land)" stroke-width="3" stroke-linejoin="round"/>
+          <!-- Karnataka: a heart of daye -->
+          <circle cx="41" cy="93" r="5" fill="#FFD27A" opacity=".0">
+            <animate attributeName="r" values="4;13;4" dur="2.8s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values=".7;0;.7" dur="2.8s" repeatCount="indefinite"/>
+          </circle>
+          <path d="M41 99.5C33 93 34 87.5 37.4 87.5C39.6 87.5 41 89.4 41 90.6C41 89.4 42.4 87.5 44.6 87.5C48 87.5 49 93 41 99.5Z"
+                fill="#E5392B" stroke="#fff" stroke-width="1.1" stroke-linejoin="round"/>
+        </g>
+        <!-- soft light -->
+        <ellipse cx="80" cy="66" rx="30" ry="14" fill="#fff" opacity=".1" transform="rotate(-28 80 66)"/>
+      </g>
+      <circle cx="100" cy="100" r="54" fill="none" stroke="#fff" stroke-width="1.6" stroke-opacity=".8"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top" aria-label="ದಯೆ ಇರಲಿ · Daye Irali">
+        <svg viewBox="0 0 200 200" role="img" aria-label="Earth logo"><use href="#dl-logo"/></svg>
+        <span><b>ದಯೆ ಇರಲಿ</b><small>Daye Irali</small></span>
+      </a>
+      <div class="seg" role="group" aria-label="Language / ಭಾಷೆ">
+        <button type="button" data-set="kn" aria-pressed="false">ಕನ್ನಡ</button>
+        <button type="button" data-set="both" aria-pressed="true">ಕನ್ನಡ + EN</button>
+        <button type="button" data-set="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+
+    <div class="hero-grid" id="top">
+      <div>
+        <h1>
+          <span class="k" lang="kn">ಪರಿಸರದ ಬಗ್ಗೆ<br>ದಯೆ ಇರಲಿ</span>
+          <span class="e" lang="en">Let there be compassion for nature.</span>
+        </h1>
+        <p class="lead kn">ಗಾಳಿ, ನೀರು, ನೆಲ, ಗಿಡ-ಮರ, ಪ್ರಾಣಿ-ಪಕ್ಷಿ — ನಮ್ಮ ಬದುಕು ಇವೆಲ್ಲದರ ಮೇಲೆ ನಿಂತಿದೆ. ಇದು ಒಬ್ಬರ ಕೆಲಸವಲ್ಲ, ಎಲ್ಲರ ಚಳವಳಿ.</p>
+        <p class="lead en">Our lives rest on air, water, soil, trees and every living being. This isn't one person's job. It is everyone's movement.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#pledge"><span class="kn">ಚಳವಳಿಗೆ ಸೇರಿ</span><span class="en">Join the movement</span></a>
+          <a class="btn btn-ghost" href="#why"><span class="kn">ಏಕೆ ಈಗ?</span><span class="en">Why now</span></a>
+        </div>
+      </div>
+      <div class="hero-logo">
+        <svg viewBox="0 0 200 200" role="img" aria-label="Earth centred on India, held in a lotus of saffron and green petals, with a red heart over Karnataka"><use href="#dl-logo"/></svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============ WHY ============ -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-intro">
+      <h2><span class="kn">ಎಲ್ಲವೂ ಇದರ ಮೇಲೆ ನಿಂತಿದೆ</span><span class="en">Everything stands on this</span></h2>
+    </div>
+    <div class="elements">
+      <article class="el air">
+        <h3><span class="kn">ಗಾಳಿ</span><span class="en">Air</span></h3>
+        <p class="kn">ನಮ್ಮ ಪ್ರತಿ ಉಸಿರೂ ಶುದ್ಧ ಗಾಳಿಯನ್ನು ಅವಲಂಬಿಸಿದೆ.</p>
+        <p class="en">Every breath we take depends on clean air.</p>
+      </article>
+      <article class="el water">
+        <h3><span class="kn">ನೀರು</span><span class="en">Water</span></h3>
+        <p class="kn">ಕೆರೆ-ನದಿಗಳು ಮುಂದಿನ ತಲೆಮಾರಿನ ಜೀವಜಲ.</p>
+        <p class="en">Our lakes and rivers are the next generation's lifeline.</p>
+      </article>
+      <article class="el soil">
+        <h3><span class="kn">ನೆಲ</span><span class="en">Soil</span></h3>
+        <p class="kn">ಮಣ್ಣು ಆರೋಗ್ಯವಾಗಿದ್ದರೆ ಮಾತ್ರ ಅನ್ನ ಸಿಗುತ್ತದೆ.</p>
+        <p class="en">Food begins in healthy soil.</p>
+      </article>
+      <article class="el life">
+        <h3><span class="kn">ಜೀವ</span><span class="en">Life</span></h3>
+        <p class="kn">ಗಿಡ-ಮರ, ಪ್ರಾಣಿ-ಪಕ್ಷಿ — ಎಲ್ಲವೂ ನಮ್ಮ ಕುಟುಂಬ.</p>
+        <p class="en">Trees, animals and birds are all part of our family.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<div class="quote">
+  <div class="wrap">
+    <blockquote>
+      <p class="q kn" lang="kn">ದಯೆಯೇ ಧರ್ಮದ ಮೂಲವಯ್ಯ</p>
+      <p class="q-en en" lang="en">Compassion is the root of dharma.</p>
+      <cite><span class="kn">ಬಸವಣ್ಣ</span><span class="en">Basavanna</span> <span>· 12<sup>th</sup> c.</span></cite>
+    </blockquote>
+  </div>
+</div>
+
+<!-- ============ PLEDGE ============ -->
+<section id="pledge">
+  <div class="wrap">
+    <div class="sec-intro">
+      <h2><span class="kn">ನನ್ನ ಪ್ರತಿಜ್ಞೆ</span><span class="en">My pledge</span></h2>
+      <p class="kn">ನೀವು ಮಾಡುವ ಕೆಲಸಗಳಿಗೆ ಗುರುತು ಹಾಕಿ. ಒಂದರಿಂದ ಶುರು ಮಾಡಿ.</p>
+      <p class="en">Tick what you will do. Start with one.</p>
+    </div>
+
+    <div class="pledge-card">
+      <ul class="pledge-list" id="pledges">
+        <li><label><input type="checkbox" data-k="tree"><span>
+          <span class="kn">ಒಂದು ಗಿಡ ನೆಡುತ್ತೇನೆ</span><span class="en">I will plant one sapling</span></span></label></li>
+        <li><label><input type="checkbox" data-k="plastic"><span>
+          <span class="kn">ಪ್ಲಾಸ್ಟಿಕ್‌ಗೆ ಇಲ್ಲ, ಬಟ್ಟೆ ಚೀಲಕ್ಕೆ ಹೌದು</span><span class="en">No to single-use plastic, yes to a cloth bag</span></span></label></li>
+        <li><label><input type="checkbox" data-k="water"><span>
+          <span class="kn">ನೀರಿನ ಪ್ರತಿ ಹನಿಯನ್ನು ಉಳಿಸುತ್ತೇನೆ</span><span class="en">I will save every drop of water</span></span></label></li>
+        <li><label><input type="checkbox" data-k="lake"><span>
+          <span class="kn">ಕೆರೆ-ನದಿಗಳನ್ನು ಕಸದಿಂದ ಮುಕ್ತವಾಗಿಡುತ್ತೇನೆ</span><span class="en">I will keep lakes and rivers litter-free</span></span></label></li>
+        <li><label><input type="checkbox" data-k="walk"><span>
+          <span class="kn">ಸಾಧ್ಯವಾದಾಗ ನಡೆದು ಅಥವಾ ಬಸ್‌ನಲ್ಲಿ ಹೋಗುತ್ತೇನೆ</span><span class="en">I will walk or take the bus when I can</span></span></label></li>
+      </ul>
+
+      <div class="prog" aria-live="polite">
+        <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" id="bar"><i></i></div>
+        <div class="count" id="count">0 / 5</div>
+      </div>
+
+      <div class="thanks" id="thanks">
+        <p class="kn"><b>ಧನ್ಯವಾದ!</b> ಈಗ ಇನ್ನೊಬ್ಬರಿಗೆ ಹೇಳಿ — ಚಳವಳಿ ಹೀಗೇ ಬೆಳೆಯುವುದು.</p>
+        <p class="en"><b>Thank you!</b> Now tell one more person. That is how this grows.</p>
+      </div>
+
+      <div class="cta-row">
+        <button type="button" class="btn btn-solid" data-share><span class="kn">ಹಂಚಿಕೊಳ್ಳಿ</span><span class="en">Share</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STEPS ============ -->
+<section id="how" style="padding-top:1rem">
+  <div class="wrap">
+    <h2><span class="kn">ಚಳವಳಿ ಹೀಗೆ ಬೆಳೆಯುತ್ತದೆ</span><span class="en">How a movement grows</span></h2>
+    <ol class="steps">
+      <li>
+        <div class="n">1</div>
+        <h3><span class="kn">ಅರಿಯಿರಿ</span><span class="en">Know</span></h3>
+        <p class="kn">ಸುತ್ತಲಿನ ಕೆರೆ, ಮರ, ಗಾಳಿಯನ್ನು ಗಮನಿಸಿ. ದಯೆ ಗಮನಿಸುವುದರಿಂದ ಶುರುವಾಗುತ್ತದೆ.</p>
+        <p class="en">Notice the lake, the tree, the air around you. Compassion starts with attention.</p>
+      </li>
+      <li>
+        <div class="n">2</div>
+        <h3><span class="kn">ಮಾಡಿ</span><span class="en">Act</span></h3>
+        <p class="kn">ಒಂದು ಸಣ್ಣ ಕೆಲಸ, ಇಂದೇ. ಗಿಡ ನೆಡಿ, ಕಸ ಆರಿಸಿ, ನೀರು ಉಳಿಸಿ.</p>
+        <p class="en">One small act, today. Plant a sapling, pick up litter, save water.</p>
+      </li>
+      <li>
+        <div class="n">3</div>
+        <h3><span class="kn">ಹಂಚಿ</span><span class="en">Spread</span></h3>
+        <p class="kn">ಮನೆ, ಶಾಲೆ, ಬೀದಿಗೆ ಹೇಳಿ. ಒಬ್ಬರಿಂದ ಹತ್ತು, ಹತ್ತರಿಂದ ಸಾವಿರ.</p>
+        <p class="en">Tell your home, school and street. One becomes ten, ten becomes a thousand.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="closing">
+  <div class="wrap">
+    <h2><span class="kn">ಈ ಚಳವಳಿ ನಿಮ್ಮಿಂದ ಶುರು</span><span class="en">This movement starts with you</span></h2>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#pledge"><span class="kn">ಪ್ರತಿಜ್ಞೆ ಮಾಡಿ</span><span class="en">Take the pledge</span></a>
+      <button type="button" class="btn btn-primary" data-share><span class="kn">ಹಂಚಿಕೊಳ್ಳಿ</span><span class="en">Share</span></button>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <div style="display:flex;align-items:center;gap:.7rem">
+      <svg viewBox="0 0 200 200" aria-hidden="true"><use href="#dl-logo"/></svg>
+      <span><b style="font-family:var(--display);font-size:1.1rem">ದಯೆ ಇರಲಿ · Daye Irali</b></span>
+    </div>
+    <span><span class="kn">ಇನ್ನಷ್ಟು ಸೌಲಭ್ಯಗಳು ಶೀಘ್ರದಲ್ಲಿ</span><span class="en">More features coming soon</span></span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  var body=document.body;
+  function get(k){try{return localStorage.getItem(k)}catch(e){return null}}
+  function set(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+
+  // language attributes for screen readers / font shaping
+  document.querySelectorAll('.en').forEach(function(n){n.setAttribute('lang','en')});
+  document.querySelectorAll('.kn').forEach(function(n){n.setAttribute('lang','kn')});
+
+  // ----- language toggle -----
+  var btns=document.querySelectorAll('.seg button');
+  function setLang(l){
+    if(['kn','en','both'].indexOf(l)<0)l='both';
+    body.setAttribute('data-lang',l);
+    btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===l?'true':'false')});
+    set('di-lang',l);
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set)})});
+  setLang(get('di-lang')||'both');
+
+  // ----- pledge -----
+  var boxes=[].slice.call(document.querySelectorAll('#pledges input'));
+  var bar=document.getElementById('bar'),fill=bar.firstElementChild,count=document.getElementById('count'),thanks=document.getElementById('thanks');
+  var saved=[];try{saved=JSON.parse(get('di-pledges')||'[]')}catch(e){}
+  boxes.forEach(function(b){b.checked=saved.indexOf(b.dataset.k)>-1});
+  function update(){
+    var on=boxes.filter(function(b){return b.checked});
+    fill.style.width=(on.length/boxes.length*100)+'%';
+    bar.setAttribute('aria-valuenow',on.length);
+    count.textContent=on.length+' / '+boxes.length;
+    thanks.classList.toggle('on',on.length===boxes.length);
+    set('di-pledges',JSON.stringify(on.map(function(b){return b.dataset.k})));
+  }
+  boxes.forEach(function(b){b.addEventListener('change',update)});
+  update();
+
+  // ----- share -----
+  var toast=document.getElementById('toast'),tt;
+  function say(t){toast.textContent=t;toast.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('on')},2400)}
+  function share(){
+    var data={title:'ದಯೆ ಇರಲಿ · Daye Irali',text:'ಪರಿಸರದ ಬಗ್ಗೆ ದಯೆ ಇರಲಿ. Let there be compassion for nature.',url:location.href};
+    if(navigator.share){navigator.share(data).catch(function(){})}
+    else if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(data.url).then(function(){say('ಲಿಂಕ್ ನಕಲಾಗಿದೆ · Link copied')},function(){say(data.url)});
+    } else {say(data.url)}
+  }
+  document.querySelectorAll('[data-share]').forEach(function(b){b.addEventListener('click',share)});
+})();
+</script>
+</body>
+</html>
