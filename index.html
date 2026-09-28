@@ -6,6 +6,8 @@
 <meta name="theme-color" content="#0D3B2A">
 <title>ದಯೆ ಇರಲಿ · Daye Irali — ಪರಿಸರದ ಬಗ್ಗೆ ದಯೆ ಇರಲಿ</title>
 <meta name="description" content="ಪರಿಸರದ ಬಗ್ಗೆ ದಯೆ ಇರಲಿ. Let there be compassion for nature — a people's movement.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500;700;800&family=Noto+Sans+Kannada:wght@400;500;700&display=swap" rel="stylesheet">
@@ -168,73 +170,97 @@ footer .en,footer .kn{color:inherit !important}
 </head>
 <body data-lang="both">
 
-<!-- ============ EARTH LOGO (Indian version) ============ -->
+<!-- ============ LOGO: hands cradling the earth, tree above, leaf wreath ============ -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <defs>
-    <linearGradient id="dl-land" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F2A33A"/>
-      <stop offset=".38" stop-color="#8FCB4E"/>
-      <stop offset="1" stop-color="#1F8A45"/>
-    </linearGradient>
-    <radialGradient id="dl-sea" cx=".38" cy=".3" r=".85">
-      <stop offset="0" stop-color="#3C9BD1"/>
-      <stop offset=".6" stop-color="#1D62A8"/>
-      <stop offset="1" stop-color="#123F73"/>
-    </radialGradient>
-    <clipPath id="dl-clip"><circle cx="100" cy="100" r="54"/></clipPath>
-    <path id="dl-petal" d="M100 5 C112 19 112 32 100 43 C88 32 88 19 100 5Z"/>
-    <symbol id="dl-logo" viewBox="0 0 200 200">
-      <!-- lotus ring: 16 petals, saffron and green -->
-      <g>
-        <use href="#dl-petal" fill="#F2A33A"/>
-        <use href="#dl-petal" fill="#2FA04A" transform="rotate(22.5 100 100)"/>
-        <use href="#dl-petal" fill="#F2A33A" transform="rotate(45 100 100)"/>
-        <use href="#dl-petal" fill="#2FA04A" transform="rotate(67.5 100 100)"/>
-        <use href="#dl-petal" fill="#F2A33A" transform="rotate(90 100 100)"/>
-        <use href="#dl-petal" fill="#2FA04A" transform="rotate(112.5 100 100)"/>
-        <use href="#dl-petal" fill="#F2A33A" transform="rotate(135 100 100)"/>
-        <use href="#dl-petal" fill="#2FA04A" transform="rotate(157.5 100 100)"/>
-        <use href="#dl-petal" fill="#F2A33A" transform="rotate(180 100 100)"/>
-        <use href="#dl-petal" fill="#2FA04A" transform="rotate(202.5 100 100)"/>
-        <use href="#dl-petal" fill="#F2A33A" transform="rotate(225 100 100)"/>
-        <use href="#dl-petal" fill="#2FA04A" transform="rotate(247.5 100 100)"/>
-        <use href="#dl-petal" fill="#F2A33A" transform="rotate(270 100 100)"/>
-        <use href="#dl-petal" fill="#2FA04A" transform="rotate(292.5 100 100)"/>
-        <use href="#dl-petal" fill="#F2A33A" transform="rotate(315 100 100)"/>
-        <use href="#dl-petal" fill="#2FA04A" transform="rotate(337.5 100 100)"/>
-      </g>
-      <!-- cream halo -->
-      <circle cx="100" cy="100" r="58" fill="#FBF3DA"/>
-      <!-- globe -->
-      <circle cx="100" cy="100" r="54" fill="url(#dl-sea)"/>
-      <g clip-path="url(#dl-clip)">
-        <!-- graticule -->
-        <g fill="none" stroke="#fff" stroke-opacity=".22" stroke-width=".9">
-          <ellipse cx="100" cy="100" rx="24" ry="54"/>
-          <ellipse cx="100" cy="100" rx="42" ry="54"/>
-          <path d="M46 100H154"/>
-          <path d="M52 76Q100 88 148 76"/>
-          <path d="M52 124Q100 136 148 124"/>
-        </g>
-        <!-- 24 spokes-ticks, a quiet nod to the chakra -->
-        <circle cx="100" cy="100" r="50" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="3" stroke-dasharray="1.4 11.69"/>
-        <!-- India -->
-        <g transform="translate(51.6 51.6) scale(.78)">
-          <path d="M32 4L48 12L56 30L88 42L104 44L124 40L116 48L104 64L92 64L84 68L76 74L64 86L56 92L57 100L55 110L46 120L41 113L35 102L28 84L27 68L16 69L12 63L9 57L16 54L20 52L16 40L24 28L32 16Z"
-                fill="url(#dl-land)" stroke="url(#dl-land)" stroke-width="3" stroke-linejoin="round"/>
-          <!-- Karnataka: a heart of daye -->
-          <circle cx="41" cy="93" r="5" fill="#FFD27A" opacity=".0">
-            <animate attributeName="r" values="4;13;4" dur="2.8s" repeatCount="indefinite"/>
-            <animate attributeName="opacity" values=".7;0;.7" dur="2.8s" repeatCount="indefinite"/>
-          </circle>
-          <path d="M41 99.5C33 93 34 87.5 37.4 87.5C39.6 87.5 41 89.4 41 90.6C41 89.4 42.4 87.5 44.6 87.5C48 87.5 49 93 41 99.5Z"
-                fill="#E5392B" stroke="#fff" stroke-width="1.1" stroke-linejoin="round"/>
-        </g>
-        <!-- soft light -->
-        <ellipse cx="80" cy="66" rx="30" ry="14" fill="#fff" opacity=".1" transform="rotate(-28 80 66)"/>
-      </g>
-      <circle cx="100" cy="100" r="54" fill="none" stroke="#fff" stroke-width="1.6" stroke-opacity=".8"/>
-    </symbol>
+<linearGradient id="dl-sea" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#4FB0E8"/><stop offset=".55" stop-color="#2A86C9"/>
+  <stop offset="1" stop-color="#1A5E9B"/></linearGradient>
+<linearGradient id="dl-land" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#7BC96A"/><stop offset="1" stop-color="#3A8F43"/></linearGradient>
+<linearGradient id="dl-skin" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#FBD9B8"/><stop offset="1" stop-color="#E4AE81"/></linearGradient>
+<linearGradient id="dl-skin2" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#EFC49F"/><stop offset="1" stop-color="#D79D72"/></linearGradient>
+<linearGradient id="dl-bark" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#8B5A32"/><stop offset="1" stop-color="#6B3F22"/></linearGradient>
+<linearGradient id="dl-leafg" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#5EA842"/><stop offset="1" stop-color="#3C7A30"/></linearGradient>
+<clipPath id="dl-clip"><circle cx="100" cy="106" r="33"/></clipPath>
+<clipPath id="dl-round"><circle cx="100" cy="100" r="96"/></clipPath>
+<path id="dl-leaf" d="M0 0C4 -6 11 -7.5 16 -5C13 1.5 6 3.5 0 0Z" fill="url(#dl-leafg)"/>
+
+  <symbol id="dl-logo" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="96" fill="#FBF7EC"/>
+  <circle cx="100" cy="100" r="93.5" fill="none" stroke="#B8992F" stroke-width="1.6"/>
+  <circle cx="100" cy="100" r="89" fill="none" stroke="#B8992F" stroke-width="1"/>
+  <g><path d="M100 176 A76 76 0 0 0 161.49 55.33" fill="none" stroke="#4F8F3A" stroke-width="1.6" stroke-linecap="round"/><use href="#dl-leaf" transform="translate(100 177.4) rotate(396) scale(0.5)"/><use href="#dl-leaf" transform="translate(100 174.6) rotate(324) scale(0.44)"/><use href="#dl-leaf" transform="translate(113.03 176.3) rotate(386.31) scale(0.52)"/><use href="#dl-leaf" transform="translate(112.56 173.54) rotate(314.31) scale(0.46)"/><use href="#dl-leaf" transform="translate(125.69 173.01) rotate(376.62) scale(0.54)"/><use href="#dl-leaf" transform="translate(124.76 170.37) rotate(304.62) scale(0.48)"/><use href="#dl-leaf" transform="translate(137.62 167.65) rotate(366.92) scale(0.56)"/><use href="#dl-leaf" transform="translate(136.25 165.2) rotate(294.92) scale(0.5)"/><use href="#dl-leaf" transform="translate(148.47 160.35) rotate(357.23) scale(0.59)"/><use href="#dl-leaf" transform="translate(146.71 158.16) rotate(285.23) scale(0.52)"/><use href="#dl-leaf" transform="translate(157.93 151.33) rotate(347.54) scale(0.61)"/><use href="#dl-leaf" transform="translate(155.84 149.47) rotate(275.54) scale(0.53)"/><use href="#dl-leaf" transform="translate(165.75 140.84) rotate(337.85) scale(0.63)"/><use href="#dl-leaf" transform="translate(163.37 139.36) rotate(265.85) scale(0.55)"/><use href="#dl-leaf" transform="translate(171.69 129.19) rotate(328.15) scale(0.65)"/><use href="#dl-leaf" transform="translate(169.09 128.13) rotate(256.15) scale(0.57)"/><use href="#dl-leaf" transform="translate(175.58 116.7) rotate(318.46) scale(0.67)"/><use href="#dl-leaf" transform="translate(172.84 116.1) rotate(246.46) scale(0.59)"/><use href="#dl-leaf" transform="translate(177.31 103.74) rotate(308.77) scale(0.69)"/><use href="#dl-leaf" transform="translate(174.51 103.6) rotate(236.77) scale(0.61)"/><use href="#dl-leaf" transform="translate(176.84 90.67) rotate(299.08) scale(0.72)"/><use href="#dl-leaf" transform="translate(174.06 91.01) rotate(227.08) scale(0.63)"/><use href="#dl-leaf" transform="translate(174.17 77.87) rotate(289.38) scale(0.74)"/><use href="#dl-leaf" transform="translate(171.49 78.67) rotate(217.38) scale(0.65)"/><use href="#dl-leaf" transform="translate(169.38 65.7) rotate(279.69) scale(0.76)"/><use href="#dl-leaf" transform="translate(166.87 66.94) rotate(207.69) scale(0.67)"/><use href="#dl-leaf" transform="translate(162.62 54.51) rotate(270) scale(0.78)"/><use href="#dl-leaf" transform="translate(160.35 56.15) rotate(198) scale(0.69)"/><circle cx="117.36" cy="181.68" r="1.9" fill="#8CC152" opacity=".8"/><circle cx="155.87" cy="162.05" r="1.9" fill="#8CC152" opacity=".8"/><circle cx="179.41" cy="125.8" r="1.9" fill="#8CC152" opacity=".8"/><circle cx="181.68" cy="82.64" r="1.9" fill="#8CC152" opacity=".8"/><g transform="translate(200 0) scale(-1 1)"><path d="M100 176 A76 76 0 0 0 161.49 55.33" fill="none" stroke="#4F8F3A" stroke-width="1.6" stroke-linecap="round"/><use href="#dl-leaf" transform="translate(100 177.4) rotate(396) scale(0.5)"/><use href="#dl-leaf" transform="translate(100 174.6) rotate(324) scale(0.44)"/><use href="#dl-leaf" transform="translate(113.03 176.3) rotate(386.31) scale(0.52)"/><use href="#dl-leaf" transform="translate(112.56 173.54) rotate(314.31) scale(0.46)"/><use href="#dl-leaf" transform="translate(125.69 173.01) rotate(376.62) scale(0.54)"/><use href="#dl-leaf" transform="translate(124.76 170.37) rotate(304.62) scale(0.48)"/><use href="#dl-leaf" transform="translate(137.62 167.65) rotate(366.92) scale(0.56)"/><use href="#dl-leaf" transform="translate(136.25 165.2) rotate(294.92) scale(0.5)"/><use href="#dl-leaf" transform="translate(148.47 160.35) rotate(357.23) scale(0.59)"/><use href="#dl-leaf" transform="translate(146.71 158.16) rotate(285.23) scale(0.52)"/><use href="#dl-leaf" transform="translate(157.93 151.33) rotate(347.54) scale(0.61)"/><use href="#dl-leaf" transform="translate(155.84 149.47) rotate(275.54) scale(0.53)"/><use href="#dl-leaf" transform="translate(165.75 140.84) rotate(337.85) scale(0.63)"/><use href="#dl-leaf" transform="translate(163.37 139.36) rotate(265.85) scale(0.55)"/><use href="#dl-leaf" transform="translate(171.69 129.19) rotate(328.15) scale(0.65)"/><use href="#dl-leaf" transform="translate(169.09 128.13) rotate(256.15) scale(0.57)"/><use href="#dl-leaf" transform="translate(175.58 116.7) rotate(318.46) scale(0.67)"/><use href="#dl-leaf" transform="translate(172.84 116.1) rotate(246.46) scale(0.59)"/><use href="#dl-leaf" transform="translate(177.31 103.74) rotate(308.77) scale(0.69)"/><use href="#dl-leaf" transform="translate(174.51 103.6) rotate(236.77) scale(0.61)"/><use href="#dl-leaf" transform="translate(176.84 90.67) rotate(299.08) scale(0.72)"/><use href="#dl-leaf" transform="translate(174.06 91.01) rotate(227.08) scale(0.63)"/><use href="#dl-leaf" transform="translate(174.17 77.87) rotate(289.38) scale(0.74)"/><use href="#dl-leaf" transform="translate(171.49 78.67) rotate(217.38) scale(0.65)"/><use href="#dl-leaf" transform="translate(169.38 65.7) rotate(279.69) scale(0.76)"/><use href="#dl-leaf" transform="translate(166.87 66.94) rotate(207.69) scale(0.67)"/><use href="#dl-leaf" transform="translate(162.62 54.51) rotate(270) scale(0.78)"/><use href="#dl-leaf" transform="translate(160.35 56.15) rotate(198) scale(0.69)"/><circle cx="117.36" cy="181.68" r="1.9" fill="#8CC152" opacity=".8"/><circle cx="155.87" cy="162.05" r="1.9" fill="#8CC152" opacity=".8"/><circle cx="179.41" cy="125.8" r="1.9" fill="#8CC152" opacity=".8"/><circle cx="181.68" cy="82.64" r="1.9" fill="#8CC152" opacity=".8"/></g></g>
+  <g clip-path="url(#dl-round)">
+    <g>
+<path d="M96 78 C95 70 94 62 92 54 C90 44 95 38 100 38 C105 38 110 44 108 54
+         C106 62 105 70 104 78 Z" fill="url(#dl-bark)"/>
+<path d="M98 58 C93 52 87 47 80 44" fill="none" stroke="#7A4A28" stroke-width="3" stroke-linecap="round"/>
+<path d="M102 58 C107 52 113 47 120 44" fill="none" stroke="#7A4A28" stroke-width="3" stroke-linecap="round"/>
+<path d="M98 48 C95 42 91 37 86 33" fill="none" stroke="#7A4A28" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M102 48 C105 42 109 37 114 33" fill="none" stroke="#7A4A28" stroke-width="2.2" stroke-linecap="round"/>
+</g>
+    <g><circle cx="100" cy="37" r="22" fill="#2F7A3A"/><circle cx="79" cy="45" r="15" fill="#2F7A3A"/><circle cx="121" cy="45" r="15" fill="#2F7A3A"/><circle cx="88" cy="27" r="12" fill="#2F7A3A"/><circle cx="112" cy="27" r="12" fill="#2F7A3A"/><circle cx="100" cy="48" r="12" fill="#2F7A3A"/><circle cx="72" cy="53" r="10" fill="#2F7A3A"/><circle cx="128" cy="53" r="10" fill="#2F7A3A"/><circle cx="100" cy="39" r="18" fill="#43A047"/><circle cx="83" cy="46" r="12" fill="#43A047"/><circle cx="117" cy="46" r="12" fill="#43A047"/><circle cx="92" cy="28" r="9" fill="#43A047"/><circle cx="108" cy="28" r="9" fill="#43A047"/><circle cx="100" cy="49" r="9" fill="#43A047"/><circle cx="76" cy="53" r="7" fill="#43A047"/><circle cx="124" cy="53" r="7" fill="#43A047"/><circle cx="95" cy="34" r="10" fill="#6FC060" opacity=".85"/><circle cx="108" cy="37" r="9" fill="#6FC060" opacity=".85"/><circle cx="87" cy="43" r="8" fill="#6FC060" opacity=".85"/><circle cx="114" cy="48" r="7" fill="#6FC060" opacity=".85"/><circle cx="100" cy="24" r="7" fill="#6FC060" opacity=".85"/><circle cx="80" cy="50" r="6" fill="#6FC060" opacity=".85"/></g>
+    <g><path d="M101 145 L118 143 C124 161 129 179 131 196 L111 196 C107 180 103 161 101 150 Z" fill="url(#dl-skin2)"/></g>
+    <g transform="translate(200 0) scale(-1 1)"><path d="M101 145 L118 143 C124 161 129 179 131 196 L111 196 C107 180 103 161 101 150 Z" fill="url(#dl-skin2)"/></g>
+    <path d="M72 118 C74 140 85 154 100 154 C115 154 126 140 128 118 C122 131 114 137 100 137 C86 137 78 131 72 118 Z" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".9" stroke-linejoin="round"/><path d="M100 138 L100 154" fill="none" stroke="#C98B5E" stroke-width=".8" opacity=".6"/>
+    <circle cx="100" cy="106" r="33" fill="url(#dl-sea)"/><g clip-path="url(#dl-clip)"><g fill="none" stroke="#fff" stroke-opacity=".20" stroke-width=".8"><ellipse cx="100" cy="106" rx="13.86" ry="33"/><ellipse cx="100" cy="106" rx="24.75" ry="33"/><path d="M67 106H133"/><path d="M71.29 91.15Q100 96.76 128.71 91.15"/><path d="M71.29 120.85Q100 126.46 128.71 120.85"/></g><g fill="url(#dl-land)">
+<path d="M76 90 C84 85 93 89 91 96 C89 102 80 103 76 100 C72 97 72 92 76 90Z"/>
+<path d="M84 108 C89 106 92 112 91 120 C90 128 85 133 82 130 C78 127 80 117 84 108Z"/>
+<path d="M104 93 C111 90 118 95 118 102 C118 109 113 116 111 123 C109 129 107 132 103 131
+         C99 130 98 124 99 117 C100 109 100 101 104 93Z"/>
+<path d="M112 84 C123 80 133 84 134 91 C135 97 128 99 121 98 C116 97 112 93 112 88Z"/>
+<path d="M119 98 C123 97 126 101 124 107 C122 112 120 115 118 112 C116 107 116 100 119 98Z"/>
+<path d="M126 107 C131 105 134 109 132 114 C130 118 126 118 125 114 C124 111 124 108 126 107Z"/>
+</g><g transform="translate(120.5 108) scale(.4)"><circle cx="0" cy="0" r="4" fill="#FFD27A" opacity="0"><animate attributeName="r" values="3;11;3" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".65;0;.65" dur="2.8s" repeatCount="indefinite"/></circle><path d="M0 7C-8 .5-7-5-3.6-5C-1.4-5 0-3.1 0-1.9C0-3.1 1.4-5 3.6-5C7-5 8 .5 0 7Z" fill="#E5392B" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/></g><ellipse cx="84" cy="88" rx="17" ry="8" fill="#fff" opacity=".16" transform="rotate(-28 84 88)"/>
+<path d="M99 74 C92 77 87 81 83 87" fill="none" stroke="#8B5A32" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M101 74 C108 77 113 81 117 87" fill="none" stroke="#8B5A32" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M99 76 C94 80 91 85 89 91" fill="none" stroke="#7A4A28" stroke-width="2.1" stroke-linecap="round"/>
+<path d="M101 76 C106 80 109 85 111 91" fill="none" stroke="#7A4A28" stroke-width="2.1" stroke-linecap="round"/>
+<path d="M100 75 C100 80 100 84 100 88" fill="none" stroke="#7A4A28" stroke-width="1.8" stroke-linecap="round"/>
+</g><circle cx="100" cy="106" r="33" fill="none" stroke="#fff" stroke-width="1.3" stroke-opacity=".7"/>
+    <g><rect x="-4" y="-25" width="8" height="29" rx="4" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(123.49 114.55) rotate(20)"/><rect x="-4.1" y="-27" width="8.2" height="31.1" rx="4.1" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(119.97 121.05) rotate(37)"/><rect x="-3.9" y="-25" width="7.8" height="28.9" rx="3.9" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(114.11 125.42) rotate(54)"/><rect x="-3.6" y="-21" width="7.2" height="24.6" rx="3.6" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(107.49 127.75) rotate(71)"/></g>
+    <g transform="translate(200 0) scale(-1 1)"><rect x="-4" y="-25" width="8" height="29" rx="4" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(123.49 114.55) rotate(20)"/><rect x="-4.1" y="-27" width="8.2" height="31.1" rx="4.1" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(119.97 121.05) rotate(37)"/><rect x="-3.9" y="-25" width="7.8" height="28.9" rx="3.9" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(114.11 125.42) rotate(54)"/><rect x="-3.6" y="-21" width="7.2" height="24.6" rx="3.6" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(107.49 127.75) rotate(71)"/></g>
+  </g>
+</symbol>
+  <symbol id="dl-mark" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="99" fill="#FBF7EC"/>
+  <g clip-path="url(#dl-round)">
+    <g transform="translate(-48 -22.2) scale(1.48)"><g>
+<path d="M96 78 C95 70 94 62 92 54 C90 44 95 38 100 38 C105 38 110 44 108 54
+         C106 62 105 70 104 78 Z" fill="url(#dl-bark)"/>
+<path d="M98 58 C93 52 87 47 80 44" fill="none" stroke="#7A4A28" stroke-width="3" stroke-linecap="round"/>
+<path d="M102 58 C107 52 113 47 120 44" fill="none" stroke="#7A4A28" stroke-width="3" stroke-linecap="round"/>
+<path d="M98 48 C95 42 91 37 86 33" fill="none" stroke="#7A4A28" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M102 48 C105 42 109 37 114 33" fill="none" stroke="#7A4A28" stroke-width="2.2" stroke-linecap="round"/>
+</g>
+    <g><circle cx="100" cy="37" r="22" fill="#2F7A3A"/><circle cx="79" cy="45" r="15" fill="#2F7A3A"/><circle cx="121" cy="45" r="15" fill="#2F7A3A"/><circle cx="88" cy="27" r="12" fill="#2F7A3A"/><circle cx="112" cy="27" r="12" fill="#2F7A3A"/><circle cx="100" cy="48" r="12" fill="#2F7A3A"/><circle cx="72" cy="53" r="10" fill="#2F7A3A"/><circle cx="128" cy="53" r="10" fill="#2F7A3A"/><circle cx="100" cy="39" r="18" fill="#43A047"/><circle cx="83" cy="46" r="12" fill="#43A047"/><circle cx="117" cy="46" r="12" fill="#43A047"/><circle cx="92" cy="28" r="9" fill="#43A047"/><circle cx="108" cy="28" r="9" fill="#43A047"/><circle cx="100" cy="49" r="9" fill="#43A047"/><circle cx="76" cy="53" r="7" fill="#43A047"/><circle cx="124" cy="53" r="7" fill="#43A047"/><circle cx="95" cy="34" r="10" fill="#6FC060" opacity=".85"/><circle cx="108" cy="37" r="9" fill="#6FC060" opacity=".85"/><circle cx="87" cy="43" r="8" fill="#6FC060" opacity=".85"/><circle cx="114" cy="48" r="7" fill="#6FC060" opacity=".85"/><circle cx="100" cy="24" r="7" fill="#6FC060" opacity=".85"/><circle cx="80" cy="50" r="6" fill="#6FC060" opacity=".85"/></g>
+    <g><path d="M101 145 L118 143 C123 158 127 172 129 186 L109 186 C106 172 103 158 101 150 Z" fill="url(#dl-skin2)"/></g>
+    <g transform="translate(200 0) scale(-1 1)"><path d="M101 145 L118 143 C123 158 127 172 129 186 L109 186 C106 172 103 158 101 150 Z" fill="url(#dl-skin2)"/></g>
+    <path d="M72 118 C74 140 85 154 100 154 C115 154 126 140 128 118 C122 131 114 137 100 137 C86 137 78 131 72 118 Z" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".9" stroke-linejoin="round"/><path d="M100 138 L100 154" fill="none" stroke="#C98B5E" stroke-width=".8" opacity=".6"/>
+    <circle cx="100" cy="106" r="33" fill="url(#dl-sea)"/><g clip-path="url(#dl-clip)"><g fill="none" stroke="#fff" stroke-opacity=".20" stroke-width=".8"><ellipse cx="100" cy="106" rx="13.86" ry="33"/><ellipse cx="100" cy="106" rx="24.75" ry="33"/><path d="M67 106H133"/><path d="M71.29 91.15Q100 96.76 128.71 91.15"/><path d="M71.29 120.85Q100 126.46 128.71 120.85"/></g><g fill="url(#dl-land)">
+<path d="M76 90 C84 85 93 89 91 96 C89 102 80 103 76 100 C72 97 72 92 76 90Z"/>
+<path d="M84 108 C89 106 92 112 91 120 C90 128 85 133 82 130 C78 127 80 117 84 108Z"/>
+<path d="M104 93 C111 90 118 95 118 102 C118 109 113 116 111 123 C109 129 107 132 103 131
+         C99 130 98 124 99 117 C100 109 100 101 104 93Z"/>
+<path d="M112 84 C123 80 133 84 134 91 C135 97 128 99 121 98 C116 97 112 93 112 88Z"/>
+<path d="M119 98 C123 97 126 101 124 107 C122 112 120 115 118 112 C116 107 116 100 119 98Z"/>
+<path d="M126 107 C131 105 134 109 132 114 C130 118 126 118 125 114 C124 111 124 108 126 107Z"/>
+</g><g transform="translate(120.5 108) scale(.4)"><circle cx="0" cy="0" r="4" fill="#FFD27A" opacity="0"><animate attributeName="r" values="3;11;3" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".65;0;.65" dur="2.8s" repeatCount="indefinite"/></circle><path d="M0 7C-8 .5-7-5-3.6-5C-1.4-5 0-3.1 0-1.9C0-3.1 1.4-5 3.6-5C7-5 8 .5 0 7Z" fill="#E5392B" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/></g><ellipse cx="84" cy="88" rx="17" ry="8" fill="#fff" opacity=".16" transform="rotate(-28 84 88)"/>
+<path d="M99 74 C92 77 87 81 83 87" fill="none" stroke="#8B5A32" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M101 74 C108 77 113 81 117 87" fill="none" stroke="#8B5A32" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M99 76 C94 80 91 85 89 91" fill="none" stroke="#7A4A28" stroke-width="2.1" stroke-linecap="round"/>
+<path d="M101 76 C106 80 109 85 111 91" fill="none" stroke="#7A4A28" stroke-width="2.1" stroke-linecap="round"/>
+<path d="M100 75 C100 80 100 84 100 88" fill="none" stroke="#7A4A28" stroke-width="1.8" stroke-linecap="round"/>
+</g><circle cx="100" cy="106" r="33" fill="none" stroke="#fff" stroke-width="1.3" stroke-opacity=".7"/>
+    <g><rect x="-4" y="-25" width="8" height="29" rx="4" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(123.49 114.55) rotate(20)"/><rect x="-4.1" y="-27" width="8.2" height="31.1" rx="4.1" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(119.97 121.05) rotate(37)"/><rect x="-3.9" y="-25" width="7.8" height="28.9" rx="3.9" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(114.11 125.42) rotate(54)"/><rect x="-3.6" y="-21" width="7.2" height="24.6" rx="3.6" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(107.49 127.75) rotate(71)"/></g>
+    <g transform="translate(200 0) scale(-1 1)"><rect x="-4" y="-25" width="8" height="29" rx="4" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(123.49 114.55) rotate(20)"/><rect x="-4.1" y="-27" width="8.2" height="31.1" rx="4.1" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(119.97 121.05) rotate(37)"/><rect x="-3.9" y="-25" width="7.8" height="28.9" rx="3.9" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(114.11 125.42) rotate(54)"/><rect x="-3.6" y="-21" width="7.2" height="24.6" rx="3.6" fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".7" transform="translate(107.49 127.75) rotate(71)"/></g></g>
+  </g>
+</symbol>
   </defs>
 </svg>
 
@@ -243,7 +269,7 @@ footer .en,footer .kn{color:inherit !important}
   <div class="wrap">
     <nav class="nav" aria-label="Main">
       <a class="brand" href="#top" aria-label="ದಯೆ ಇರಲಿ · Daye Irali">
-        <svg viewBox="0 0 200 200" role="img" aria-label="Earth logo"><use href="#dl-logo"/></svg>
+        <svg viewBox="0 0 200 200" role="img" aria-label="Earth logo"><use href="#dl-mark"/></svg>
         <span><b>ದಯೆ ಇರಲಿ</b><small>Daye Irali</small></span>
       </a>
       <div class="seg" role="group" aria-label="Language / ಭಾಷೆ">
@@ -267,7 +293,7 @@ footer .en,footer .kn{color:inherit !important}
         </div>
       </div>
       <div class="hero-logo">
-        <svg viewBox="0 0 200 200" role="img" aria-label="Earth centred on India, held in a lotus of saffron and green petals, with a red heart over Karnataka"><use href="#dl-logo"/></svg>
+        <svg viewBox="0 0 200 200" role="img" aria-label="Two hands cradling the earth with a tree growing from it, ringed by a leaf wreath"><use href="#dl-logo"/></svg>
       </div>
     </div>
   </div>
@@ -398,7 +424,7 @@ footer .en,footer .kn{color:inherit !important}
 <footer>
   <div class="wrap row">
     <div style="display:flex;align-items:center;gap:.7rem">
-      <svg viewBox="0 0 200 200" aria-hidden="true"><use href="#dl-logo"/></svg>
+      <svg viewBox="0 0 200 200" aria-hidden="true"><use href="#dl-mark"/></svg>
       <span><b style="font-family:var(--display);font-size:1.1rem">ದಯೆ ಇರಲಿ · Daye Irali</b></span>
     </div>
     <span><span class="kn">ಇನ್ನಷ್ಟು ಸೌಲಭ್ಯಗಳು ಶೀಘ್ರದಲ್ಲಿ</span><span class="en">More features coming soon</span></span>
