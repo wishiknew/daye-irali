@@ -1,57 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Hands cradling the earth with a tree growing from it">
-  <defs>
-    <linearGradient id="f-sea" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#4FB0E8"/><stop offset="1" stop-color="#1C69AC"/>
-    </linearGradient>
-    <linearGradient id="f-skin" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FBDCBC"/><stop offset="1" stop-color="#E4AE81"/>
-    </linearGradient>
-    <clipPath id="f-globe"><circle cx="32" cy="42" r="15"/></clipPath>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs>
+  <radialGradient id="dl-sea" cx=".38" cy=".3" r=".85">
+    <stop offset="0" stop-color="#5BC0F0"/><stop offset=".55" stop-color="#2196F3"/>
+    <stop offset="1" stop-color="#1565C0"/>
+  </radialGradient>
+  <linearGradient id="dl-land" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#7CC96B"/><stop offset="1" stop-color="#3E9142"/>
+  </linearGradient>
+  <linearGradient id="dl-skin" x1="0" y1="0" x2=".3" y2="1">
+    <stop offset="0" stop-color="#FAD3AC"/><stop offset="1" stop-color="#DFA173"/>
+  </linearGradient>
+  <linearGradient id="dl-skin2" x1="0" y1="0" x2=".3" y2="1">
+    <stop offset="0" stop-color="#F3C39A"/><stop offset="1" stop-color="#D2926A"/>
+  </linearGradient>
+  <linearGradient id="dl-ring" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#5CBB4A"/><stop offset="1" stop-color="#2E8B2E"/>
+  </linearGradient>
+  <radialGradient id="dl-glow" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#9CCC65" stop-opacity=".85"/>
+    <stop offset="1" stop-color="#9CCC65" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="dl-clip"><circle cx="100" cy="100" r="36"/></clipPath>
+  <path id="dl-leaf" d="M0 0C4 -6 11 -7.5 16 -5C13 1.5 6 3.5 0 0Z"/>
+  <clipPath id="dl-disc"><circle cx="100" cy="100" r="99"/></clipPath>
+</defs><circle cx="100" cy="100" r="99" fill="#FFFFFF"/><g clip-path="url(#dl-disc)"><g transform="translate(-35.7 -28.9) scale(1.357)"><!-- glow behind the tree -->
+<circle cx="100" cy="52" r="40" fill="url(#dl-glow)"/>
 
-  <circle cx="32" cy="32" r="32" fill="#0D3B2A"/>
+<!-- tree -->
+<path d="M97.6 68 C97 60 96.4 54 95.6 48 C94.6 41 99 37.5 100 37.5 C101 37.5 105.4 41 104.4 48
+         C103.6 54 103 60 102.4 68 Z" fill="#6D4C2F"/>
+<g fill="#2E7D32">
+  <circle cx="100" cy="42" r="15"/><circle cx="86" cy="49" r="10"/><circle cx="114" cy="49" r="10"/>
+  <circle cx="91" cy="34" r="8.5"/><circle cx="109" cy="34" r="8.5"/>
+</g>
+<g fill="#43A047">
+  <circle cx="100" cy="43" r="11.5"/><circle cx="88.5" cy="49" r="7"/><circle cx="111.5" cy="49" r="7"/>
+  <circle cx="93" cy="36" r="6"/><circle cx="107" cy="36" r="6"/>
+</g>
+<g fill="#7CC96B">
+  <circle cx="96" cy="39" r="5.5"/><circle cx="106" cy="45" r="4.2"/><circle cx="89" cy="44" r="3.4"/>
+</g>
 
-  <!-- trunk, then canopy over it -->
-  <path d="M29.8 32 C29.4 26 28.8 22 28.2 18 C27.4 13 30 10.5 32 10.5 C34 10.5 36.6 13 35.8 18
-           C35.2 22 34.6 26 34.2 32 Z" fill="#7A4A28"/>
-  <g fill="#2F7A3A">
-    <circle cx="32" cy="14" r="11"/><circle cx="21" cy="19" r="7.5"/><circle cx="43" cy="19" r="7.5"/>
-    <circle cx="25" cy="8.5" r="6"/><circle cx="39" cy="8.5" r="6"/>
-  </g>
-  <g fill="#52B24B">
-    <circle cx="32" cy="15" r="8.5"/><circle cx="23.5" cy="19.5" r="5.5"/><circle cx="40.5" cy="19.5" r="5.5"/>
-    <circle cx="27" cy="10" r="4.5"/><circle cx="37" cy="10" r="4.5"/>
-  </g>
-  <g fill="#7ED169">
-    <circle cx="29" cy="12" r="4"/><circle cx="36.5" cy="16" r="3.2"/><circle cx="23.5" cy="16.5" r="2.6"/>
-  </g>
+<!-- back forearms -->
+<g fill="url(#dl-skin2)">
+  <path d="M118 152 C122 164 126 176 129 190 L149 190 C145 175 141 162 138 148 Z"/>
+  <path d="M82 152 C78 164 74 176 71 190 L51 190 C55 175 59 162 62 148 Z"/>
+</g>
 
-  <!-- palm bowl, behind the globe -->
-  <path d="M11 44 C12 56 20 62 32 62 C44 62 52 56 53 44 C49 51 42 54 32 54 C22 54 15 51 11 44 Z"
-        fill="url(#f-skin)"/>
+<!-- palms, behind the globe -->
+<g fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".8" stroke-linejoin="round">
+  <path d="M100 152 C100 141 104 130 111 124 C118 119 128 119 134 124 C141 130 144 139 141 148 C138 156 128 161 118 159 C109 157 100 157 100 152 Z"/>
+  <path d="M100 152 C100 141 96 130 89 124 C82 119 72 119 66 124 C59 130 56 139 59 148 C62 156 72 161 82 159 C91 157 100 157 100 152 Z"/>
+</g>
 
-  <!-- globe -->
-  <circle cx="32" cy="42" r="15" fill="url(#f-sea)"/>
-  <g clip-path="url(#f-globe)">
-    <g fill="#5FBE55">
-      <path d="M18 35 C23 31 29 34 27 39 C25 44 18 45 15 41 Z"/>
-      <path d="M35 29 C42 27 48 31 47 37 C46 42 41 44 38 49 C36 54 33 57 30 55 C27 53 28 47 30 41 C31 35 32 30 35 29Z"/>
-      <path d="M22 48 C26 46 28 51 27 57 L20 57 C19 53 20 49 22 48Z"/>
-    </g>
-    <g fill="none" stroke="#7A4A28" stroke-width="1.5" stroke-linecap="round">
-      <path d="M31 28 C28 30 26 32 25 35"/><path d="M33 28 C36 30 38 32 39 35"/>
-      <path d="M32 28 C32 31 32 33 32 36"/>
-    </g>
+<!-- globe -->
+<circle cx="100" cy="100" r="36" fill="url(#dl-sea)"/>
+<g clip-path="url(#dl-clip)">
+  <g fill="url(#dl-land)">
+    <path d="M68 84 C76 78 88 82 86 91 C84 99 72 101 67 96 C63 91 64 87 68 84Z"/>
+    <path d="M78 110 C85 107 89 115 88 126 C87 137 81 145 77 142 C72 138 74 122 78 110Z"/>
+    <path d="M104 78 C114 74 124 80 124 89 C124 98 118 107 115 116 C112 124 109 130 104 128
+             C99 126 98 117 99 107 C101 96 100 83 104 78Z"/>
+    <path d="M118 96 C126 93 132 99 129 107 C126 114 120 116 118 111 C116 105 115 98 118 96Z"/>
   </g>
-  <circle cx="32" cy="42" r="15" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.2"/>
+  <g fill="none" stroke="#fff" stroke-opacity=".18" stroke-width=".9">
+    <ellipse cx="100" cy="100" rx="15" ry="36"/><ellipse cx="100" cy="100" rx="27" ry="36"/>
+    <path d="M64 100H136"/>
+    <path d="M69 82Q100 92 131 82"/><path d="M69 118Q100 128 131 118"/>
+  </g>
+  <g fill="none" stroke="#6D4C2F" stroke-width="2.6" stroke-linecap="round">
+    <path d="M99 66 C94 70 90 74 87 80"/><path d="M101 66 C106 70 110 74 113 80"/>
+    <path d="M100 66 C100 72 100 76 100 82"/>
+  </g>
+  <ellipse cx="84" cy="80" rx="19" ry="9" fill="#fff" opacity=".2" transform="rotate(-28 84 80)"/>
+</g>
+<circle cx="100" cy="100" r="36" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.4"/>
 
-  <!-- fingers -->
-  <g fill="url(#f-skin)" stroke="#C98B5E" stroke-width=".6">
-    <rect x="-2.7" y="-13" width="5.4" height="15.7" rx="2.7" transform="translate(42 46.6) rotate(25)"/>
-    <rect x="-2.8" y="-14" width="5.6" height="16.8" rx="2.8" transform="translate(39 50.4) rotate(50)"/>
-    <rect x="-2.6" y="-12" width="5.2" height="14.6" rx="2.6" transform="translate(35.4 52.5) rotate(72)"/>
-    <rect x="-2.7" y="-13" width="5.4" height="15.7" rx="2.7" transform="translate(22 46.6) rotate(-25)"/>
-    <rect x="-2.8" y="-14" width="5.6" height="16.8" rx="2.8" transform="translate(25 50.4) rotate(-50)"/>
-    <rect x="-2.6" y="-12" width="5.2" height="14.6" rx="2.6" transform="translate(28.6 52.5) rotate(-72)"/>
+<!-- thumbs -->
+<g fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".8" stroke-linejoin="round">
+  <path d="M-5 4 C-5.6 -2 -5.4 -9 -4.4 -13 C-3.8 -16.5 3.8 -16.5 4.4 -13 C5.4 -9 5.6 -2 5 4 Z" transform="translate(137 141) rotate(54)"/>
+  <path d="M-5 4 C-5.6 -2 -5.4 -9 -4.4 -13 C-3.8 -16.5 3.8 -16.5 4.4 -13 C5.4 -9 5.6 -2 5 4 Z" transform="translate(63 141) rotate(-54)"/>
+</g>
+
+<!-- fingers, in front of the globe -->
+<g fill="url(#dl-skin)" stroke="#C98B5E" stroke-width=".75" stroke-linejoin="round">
+  <g>
+    <path d="M-4.4 3 C-5 -5 -4.8 -13 -3.8 -18 C-3.2 -22 3.2 -22 3.8 -18 C4.8 -13 5 -5 4.4 3 Z"
+          transform="translate(114 127) rotate(-22)"/>
+    <path d="M-4.6 3 C-5.2 -6 -5 -15 -4 -21 C-3.4 -25 3.4 -25 4 -21 C5 -15 5.2 -6 4.6 3 Z"
+          transform="translate(120 124) rotate(-15)"/>
+    <path d="M-4.5 3 C-5.1 -5 -4.9 -14 -3.9 -20 C-3.3 -24 3.3 -24 3.9 -20 C4.9 -14 5.1 -5 4.5 3 Z"
+          transform="translate(128 124) rotate(1)"/>
+    <path d="M-4.1 3 C-4.7 -4 -4.5 -11 -3.5 -16 C-2.9 -19.5 2.9 -19.5 3.5 -16 C4.5 -11 4.7 -4 4.1 3 Z"
+          transform="translate(136 128) rotate(18)"/>
   </g>
-</svg>
+  <g transform="translate(200 0) scale(-1 1)">
+    <path d="M-4.4 3 C-5 -5 -4.8 -13 -3.8 -18 C-3.2 -22 3.2 -22 3.8 -18 C4.8 -13 5 -5 4.4 3 Z"
+          transform="translate(114 127) rotate(-22)"/>
+    <path d="M-4.6 3 C-5.2 -6 -5 -15 -4 -21 C-3.4 -25 3.4 -25 4 -21 C5 -15 5.2 -6 4.6 3 Z"
+          transform="translate(120 124) rotate(-15)"/>
+    <path d="M-4.5 3 C-5.1 -5 -4.9 -14 -3.9 -20 C-3.3 -24 3.3 -24 3.9 -20 C4.9 -14 5.1 -5 4.5 3 Z"
+          transform="translate(128 124) rotate(1)"/>
+    <path d="M-4.1 3 C-4.7 -4 -4.5 -11 -3.5 -16 C-2.9 -19.5 2.9 -19.5 3.5 -16 C4.5 -11 4.7 -4 4.1 3 Z"
+          transform="translate(136 128) rotate(18)"/>
+  </g>
+</g>
+</g></g></svg>
