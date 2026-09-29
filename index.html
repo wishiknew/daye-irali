@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0D3B2A">
-<title>ದಯೆ ಇರಲಿ · Daye Irali — ಪರಿಸರದ ಬಗ್ಗೆ ದಯೆ ಇರಲಿ</title>
-<meta name="description" content="ಪರಿಸರದ ಬಗ್ಗೆ ದಯೆ ಇರಲಿ. Let there be compassion for nature — a people's movement.">
+<title>ದಯೆ ಇರಲಿ · Daye Irali — ಪರಿಸರದ ಮೇಲೆ ದಯೆ ಇರಲಿ</title>
+<meta name="description" content="ಪರಿಸರದ ಮೇಲೆ ದಯೆ ಇರಲಿ. Let there be compassion for nature — a people's movement.">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -188,7 +188,7 @@ footer .en,footer .kn{color:inherit !important}
     <div class="hero-grid" id="top">
       <div>
         <h1>
-          <span class="k" lang="kn">ಪರಿಸರದ ಬಗ್ಗೆ<br>ದಯೆ ಇರಲಿ</span>
+          <span class="k" lang="kn">ಪರಿಸರದ ಮೇಲೆ<br>ದಯೆ ಇರಲಿ</span>
           <span class="e" lang="en">Let there be compassion for nature.</span>
         </h1>
         <p class="lead kn">ಗಾಳಿ, ನೀರು, ನೆಲ, ಗಿಡ-ಮರ, ಪ್ರಾಣಿ-ಪಕ್ಷಿ — ನಮ್ಮ ಬದುಕು ಇವೆಲ್ಲದರ ಮೇಲೆ ನಿಂತಿದೆ. ಇದು ಒಬ್ಬರ ಕೆಲಸವಲ್ಲ, ಎಲ್ಲರ ಚಳವಳಿ.</p>
@@ -380,7 +380,7 @@ footer .en,footer .kn{color:inherit !important}
   var toast=document.getElementById('toast'),tt;
   function say(t){toast.textContent=t;toast.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('on')},2400)}
   function share(){
-    var data={title:'ದಯೆ ಇರಲಿ · Daye Irali',text:'ಪರಿಸರದ ಬಗ್ಗೆ ದಯೆ ಇರಲಿ. Let there be compassion for nature.',url:location.href};
+    var data={title:'ದಯೆ ಇರಲಿ · Daye Irali',text:'ಪರಿಸರದ ಮೇಲೆ ದಯೆ ಇರಲಿ. Let there be compassion for nature.',url:location.href};
     if(navigator.share){navigator.share(data).catch(function(){})}
     else if(navigator.clipboard&&navigator.clipboard.writeText){
       navigator.clipboard.writeText(data.url).then(function(){say('ಲಿಂಕ್ ನಕಲಾಗಿದೆ · Link copied')},function(){say(data.url)});
